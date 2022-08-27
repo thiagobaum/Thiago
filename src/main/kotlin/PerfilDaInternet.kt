@@ -5,9 +5,11 @@ fun main() {
     amanda.showProfile()
     atiqah.showProfile()
 }
-
 class Person(val name: String, val age: Int, val hobby: String?, val referrer: Person?) {
     fun showProfile() {
+        println("Nome $name")
+        println("Idade $age")
+
         // Fill in code
     }
 }

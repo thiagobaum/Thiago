@@ -8,7 +8,12 @@ fun main() {
     println("O preço do bilhete de cinema para uma pessoa com idade é $adult  \$${ticketPrice(adult, isMonday)}.")
     println("O preço do bilhete de cinema para uma pessoa com idade é $senior  \$${ticketPrice(senior, isMonday)}.")
 }
-
 fun ticketPrice(age: Int, isMonday: Boolean): Int {
-    //todo
+   return when (age) {
+         //0 -> println("Empty tank")
+            in 0..12 -> 15
+            in 13..60 -> if (isMonday) 25 else 30
+            in 61..100 -> 20
+        else -> -1
+    }
 }

@@ -5,7 +5,10 @@ fun main() {
     printNotificationSummary(morningNotification)
     printNotificationSummary(eveningNotification)
 }
-
 fun printNotificationSummary(numberOfMessages: Int) {
-//todo
-}
+    if (numberOfMessages <100 ) {
+        println("Você tem ${numberOfMessages} notificações")
+}   else{
+        println("você recebeu 99+ notificações")
+
+}}
